@@ -76,7 +76,7 @@ public class SuosouActivity extends BaseActivity {
         });
 
 
-        
+
 //        suosouEdit.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 //            private ViewGroup.LayoutParams layoutParams;
 //            @Override
