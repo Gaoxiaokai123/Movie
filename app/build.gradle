@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.bawei.cinemademo"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.example.john.greendaodemo.gen'
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //butterknife
+    implementation "com.jakewharton:butterknife:8.8.1"
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // Retrofit库
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+
+    // Okhttp库
+    implementation 'com.squareup.okhttp3:okhttp:3.1.2'
+
+    //rxjava+rxandroid
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    //retrofit回调适配器采用rxjava进行处理
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+
+    //gson数据解析器
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+
+    //okhttp拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+
+    //xrecyclerview
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+
+//glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+//RecyclerView
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    //Tablayout
+    implementation 'com.android.support:design:28.0.0'
+
+    //banner依赖
+    implementation 'com.youth.banner:banner:1.4.9'
+
+
+    //xbanner
+    implementation 'com.xhb:xbanner:1.3.1'
+
+    //fresco依赖大全
+    implementation 'com.facebook.fresco:fresco:0.14.1'
+    implementation 'com.facebook.fresco:animated-base-support:0.14.1'
+    implementation 'com.facebook.fresco:animated-gif:0.14.1'
+    implementation 'com.facebook.fresco:webpsupport:0.14.1'
+    implementation 'com.facebook.fresco:animated-webp:0.14.1'
+    implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
+    //    a、在 API < 14 上的机器支持 WebP 时，需要添加以下依赖
+    implementation 'com.facebook.fresco:animated-base-support:0.14.1'
+//    b、支持GIF动图，需要添加以下依赖
+
+    implementation 'com.facebook.fresco:animated-gif:0.14.1'
+//    c、支持WebP，需要添加以下依赖
+
+    implementation 'com.facebook.fresco:webpsupport:0.14.1'
+//    d、支持WebP动图，需要添加以下依赖
+
+    implementation 'com.facebook.fresco:animated-webp:0.14.1'
+//    e、网络实现层想使用okhttp3，需要添加以下依赖
+    implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
+    //image-loader依赖
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    implementation "com.facebook.fresco:imagepipeline-okhttp3:0.12.0+"
+
+    //greendao 依赖
+    implementation 'org.greenrobot:greendao:3.0.1'
+    implementation 'org.greenrobot:greendao-generator:3.0.0'
+
+}

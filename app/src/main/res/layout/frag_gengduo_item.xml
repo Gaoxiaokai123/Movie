@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--即将上映-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="35dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="84dp"-->
+    <!--android:layout_height="108dp"-->
+    <!--android:src="@mipmap/ic_launcher"-->
+    <!--android:id="@+id/frag_gengduo_item_img"/>-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/frag_gengduo_item_img"
+        android:layout_width="88dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        app:actualImageScaleType="centerCrop"
+        app:roundedCornerRadius="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/frag_gengduo_item_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frag_gengduo_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="5dp"
+            android:text="电影名称"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/frag_gengduo_item_daoyan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="导演"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/frag_gengduo_item_zhuyan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="主演"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/frag_gengduo_item_pingfen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="评分"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/btn_home_goupiao"
+                android:text="购票"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

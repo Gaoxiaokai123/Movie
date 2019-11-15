@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#141931">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/home_banner"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></com.stx.xhb.xbanner.XBanner>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/frag_home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:text="1/5"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1c2243">
+
+                <ImageView
+                    android:id="@+id/home_img2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/xin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_img2"
+                    android:gravity="center"
+                    android:text="正在热映"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/home_gegnduo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingTop="7dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/frag_home_recy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1c2243">
+
+                <ImageView
+                    android:id="@+id/home_img3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/xin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_img3"
+                    android:gravity="center"
+                    android:text="即将上映"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/home_gegnduo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingTop="7dp"
+                android:id="@+id/frag_home_recy2"
+                android:paddingLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1c2243">
+
+                <ImageView
+                    android:id="@+id/home_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/xin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_img"
+                    android:gravity="center"
+                    android:text="热门电影"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/home_gegnduo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/home_hotimg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/beijing" />
+
+                <TextView
+                    android:id="@+id/home_hotname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_hotimg"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="15dp"
+                    android:text="电影名称"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/home_hotpingfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_alignBottom="@+id/home_hotimg"
+                    android:text="8.6分"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/home_hotgoupiao"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@+id/home_hotimg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_home_goupiao"
+                    android:text="购票"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@android:color/white" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingTop="7dp"
+                android:paddingLeft="12dp"
+                android:id="@+id/frag_home_recy3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

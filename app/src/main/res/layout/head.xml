@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#1c2243">
+
+    <ImageView
+        android:id="@+id/head_dingwei"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_location" />
+
+    <TextView
+        android:id="@+id/head_text"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/head_dingwei"
+        android:text="北京"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/head_suosou"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:src="@mipmap/icon_search" />
+
+
+
+</RelativeLayout>

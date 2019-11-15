@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--即将上映-->
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="88dp"-->
+        <!--android:layout_height="108dp"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/frag_home_commingsoon_img"/>-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:paddingTop="7dp"
+        app:roundedCornerRadius="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/frag_home_commingsoon_img"
+        android:layout_width="88dp"
+        android:layout_height="108dp"
+        app:actualImageScaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/frag_home_commingsoon_img"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frag_home_commingsoon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="商品名称"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/frag_home_commingsoon_data"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:text="时间上映"/>
+
+        <TextView
+            android:id="@+id/frag_home_commingsoon_xiangkan"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:text="2345人想看"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:textSize="14sp"
+        android:text="预约"
+        android:textColor="#fff"
+        android:background="@drawable/btn_home_goupiao"/>
+
+
+
+
+</RelativeLayout>

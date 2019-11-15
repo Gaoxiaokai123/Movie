@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#141931">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:src="@mipmap/invalid_name" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/frag_my_top_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/xinxi" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frag_my_card"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:id="@+id/frag_my_relat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/frag_my_card_img"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    app:actualImageScaleType="centerCrop"
+                    app:placeholderImage="@drawable/attrs"
+                    app:roundAsCircle="false"
+                    app:backgroundImage="@color/movie_home_bg"
+                    android:src="@drawable/attrs"/>
+
+                <TextView
+                    android:id="@+id/frag_my_card_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/frag_my_card_img"
+                    android:text="电影故事"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/frag_my_card_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/shape" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/frag_my_card"
+        android:background="#1c2243"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/frag_my_rela1_img"
+            android:layout_marginLeft="8dp"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/wodedianyingpiao"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/frag_my_rela1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/frag_my_rela1_img"
+            android:text="电影票"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/frag_my_rela1_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/shape2" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/radiogroup_bg">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/frag_my_radiobtn1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/group_2"
+                    android:gravity="center"
+                    android:text="我的关注"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/frag_my_radiobtn2"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/group_4"
+                    android:text="我的预约"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="18dp"
+                    android:id="@+id/frag_my_radiobtn3"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/chongzhijilu"
+                    android:gravity="center"
+                    android:text="购票记录"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/frag_my_radiobtn4"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="看过的电影"
+                android:textColor="@android:color/white"
+                android:drawableTop="@mipmap/group_5"/>
+
+            <RadioButton
+                android:id="@+id/frag_my_radiobtn5"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="我的评论"
+                android:textColor="@android:color/white"
+                android:drawableTop="@mipmap/group_6"/>
+
+            <RadioButton
+                android:id="@+id/frag_my_radiobtn6"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="意见反馈"
+                android:textColor="@android:color/white"
+                android:drawableTop="@mipmap/group_7"/>
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/frag_my_radiobtn7"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@android:color/white"
+                android:drawableTop="@mipmap/group_8"/>
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
